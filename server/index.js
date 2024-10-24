@@ -38,7 +38,7 @@ async function startServer() {
             },
 
             Query: {
-                getTodos: async () => (await axios.get('https://dummyjson.com/todos/random/10')).data, // dummy API urls for getting dummy data
+                getTodos: async () => (await axios.get('https://dummyjson.com/todos/random/10')).data, //Getting dummy data from dummy APIs
                 getAllUsers: async () => (await axios.get('https://dummyjson.com/users')).data.users,
                 getUser: async (parent, { id }) => (await axios.get(`https://dummyjson.com/users/${id}`)).data
             }
