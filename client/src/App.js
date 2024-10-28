@@ -18,6 +18,7 @@ query GetTodosWithUser {
 }
 `;
 
+// Some times External Dummy APIs won't return Accurate data- So it will throw error. After refreshing the page many times when it gets data it will show table with that data.
 function App() {
   const { data, loading } = useQuery(query)
 
